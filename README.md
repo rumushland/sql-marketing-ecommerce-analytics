@@ -41,7 +41,8 @@ The two datasets were analyzed independently.
 
 **Finding:** The Expansion campaign generated the highest weekly total value of 2,294,120.
 
-[View SQL Query](postgresql/03_weekly_campaign_value.sql)
+
+[View SQL Query](03_weekly_campaign_value.sql)
 
 ### Business Problem 2: Consecutive Impression Streak
 
@@ -51,7 +52,8 @@ The two datasets were analyzed independently.
 
 **Finding:** Identified the longest consecutive impression streak of 108 days, including its start and end dates.
 
-[View SQL Query](postgresql/05_longest_adset_streak.sql)
+
+[View SQL Query](05_longest_adset_streak.sql)
 
 ---
 
