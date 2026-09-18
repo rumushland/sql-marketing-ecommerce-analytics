@@ -37,10 +37,9 @@ The two datasets were analyzed independently.
 
 **Question:** Which advertising campaign generated the highest weekly total value?
 
-**Approach:** Used SQL DATE_TRUNC() to group campaign data by week start date and identified the campaign with the highest weekly total value.
+**Approach:** Used SQL DATE_TRUNC() to group campaign data by week and identify the campaign with the highest total value.
 
 **Finding:** The Expansion campaign generated the highest weekly total value of 2,294,120.
-
 
 [View SQL Query](03_weekly_campaign_value.sql)
 
@@ -51,7 +50,6 @@ The two datasets were analyzed independently.
 **Approach:** Used SQL ROW_NUMBER() to identify consecutive impression streaks.
 
 **Finding:** Identified the longest consecutive impression streak of 108 days, including its start and end dates.
-
 
 [View SQL Query](05_longest_adset_streak.sql)
 
@@ -67,6 +65,10 @@ The two datasets were analyzed independently.
 
 **Approach:** Used SQL in Google BigQuery to analyze Google Analytics 4 (GA4) event data and calculate session-based cart, checkout and purchase conversion rates.
 
-**Output:** Calculated conversion rates by date, traffic source, medium and campaign to compare performance across the purchasing journey.
+**Output:** Session-based cart, checkout and purchase conversion rates by traffic channel.
+
+
+![Traffic Channel Conversion Analysis](03_traffic_channel_conversions.png)
 
 [View SQL Query](bigquery/03_traffic_channel_conversions.sql)
+
